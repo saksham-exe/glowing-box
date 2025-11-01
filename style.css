@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 37, 37);
+    
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    border-radius: 10px;
+    animation: rotate 4s  infinite, glow 1.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px cyan;
+    border: none;
+}
+
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+
+@keyframes glow  {
+    0%{
+        box-shadow: 0 0 10px cyan;
+    }
+    50%{
+        box-shadow: 0 0 20px cyan;
+    }
+    100%{
+        box-shadow: 0 0 30px cyan;
+    }
+}
